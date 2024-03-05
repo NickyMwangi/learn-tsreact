@@ -83,10 +83,10 @@ input[type="text"] {
   margin: 2px;
 }
 
-ol {
+.to-do-list ol {
   padding: 0;
 }
-li {
+.to-do-list li {
   font-size: 2rem;
   font-weight: bold;
   padding: 15px;

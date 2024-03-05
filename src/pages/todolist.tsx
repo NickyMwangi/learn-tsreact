@@ -1,12 +1,16 @@
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 
 export function ToDoList() {
+  const { id } = useParams();
+
   const [tasks, setTasks] = useState(["Eat breakfast", "Take a shower", "start coding"]);
   const [newTask, setNewTask] = useState("");
 
   const InputChange = (e: any) => {
     setNewTask(e.target.value);
   };
+  
   const AddNewTask = (e: any) => {
     if (newTask.trim() !== "") {
       setTasks((t) => [...t, newTask]);
@@ -34,7 +38,7 @@ export function ToDoList() {
 
   return (
     <div className="to-do-list">
-      <h1>To do list</h1>
+      <h1>To do list {id}</h1>
       <div>
         <input type="text" placeholder="Enter a task" value={newTask} onChange={InputChange} />
         <button className="add-button" onClick={AddNewTask}>
