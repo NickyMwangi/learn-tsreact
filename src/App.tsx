@@ -1,4 +1,5 @@
 import "./App.css";
+import { DigitalClock } from "./Components/DigitalClock";
 import { TestUseEffect } from "./Components/testUseEffect";
 // import { Button } from "./Components/Buttons";
 // import { Student } from "./Components/students";
@@ -7,7 +8,7 @@ import { TestUseEffect } from "./Components/testUseEffect";
 // import { MyStateTest } from "./Components/MyState";
 // import ColorPicker from "./Components/colorPicker";
 // import { UpdaterFunction } from "./Components/updaterFn";
-// import { ToDoList } from "./Components/todolist";
+import { ToDoList } from "./Components/todolist";
 
 export function App() {
   // const fruits = [
@@ -37,7 +38,9 @@ export function App() {
       <h1>Updater Function</h1>
       <UpdaterFunction></UpdaterFunction> */}
       {/* <ToDoList></ToDoList> */}
-      <TestUseEffect></TestUseEffect>
+      <DigitalClock />
+      <TestUseEffect />
+      <ToDoList />
     </>
   );
 }

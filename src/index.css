@@ -100,3 +100,16 @@ li {
 .text {
   flex: 1;
 }
+
+.clock-container {
+  backgrop-filter: blur(5px);
+  padding: 10px;
+}
+
+.clock {
+  color: black;
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
+}
