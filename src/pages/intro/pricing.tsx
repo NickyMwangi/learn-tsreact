@@ -9,7 +9,7 @@ import {
   StackProps,
   Text,
 } from "@chakra-ui/react";
-import { CheckIcon } from "../icons/Icons";
+import { CheckIcon } from "../../icons/Icons";
 
 export const ListItem = (props: StackProps) => {
   const { children, ...rest } = props;

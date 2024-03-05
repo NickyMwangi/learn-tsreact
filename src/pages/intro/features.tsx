@@ -1,5 +1,5 @@
 import { Box, HStack, Icon, Stack, StackProps, Text } from "@chakra-ui/react";
-import { CheckIcon } from "../icons/Icons";
+import { CheckIcon } from "../../icons/Icons";
 
 interface FeatureProps extends StackProps {
   icon: React.ElementType;

@@ -9,7 +9,7 @@ export function App() {
       <Container maxW="container.xl" py={10}>
         <CustomRoutes />
         <Button onClick={toggleColorMode}>
-          Toggle theme {colorMode === "light" ? "Light" : "Dark"}
+          Toggle theme {colorMode === "light" ? "Dark" : "Light"}
         </Button>
       </Container>
     </>

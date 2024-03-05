@@ -1,5 +1,5 @@
-import { Button } from "../Components/Buttons";
-import { MyStateTest } from "../Components/MyState";
+import { Button } from "../../Components/intro/Buttons";
+import { MyStateTest } from "../../Components/intro/MyState";
 import { ListRendering } from "./ListRender";
 import { ConditionsRendering } from "./conditions";
 import { Student } from "./students";

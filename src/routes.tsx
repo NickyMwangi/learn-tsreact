@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import { Baselayout } from "./Components/layout";
-import { DigitalClock } from "./pages/DigitalClock";
-import { Home } from "./pages/Home";
-import ColorPicker from "./pages/colorPicker";
-import { StopWatch } from "./pages/stopwatch";
-import { ToDoList } from "./pages/todolist";
-import { SampleDesign } from "./Components/sampleDesign";
+import { DigitalClock } from "./pages/intro/DigitalClock";
+import { Home } from "./pages/intro/Home";
+import ColorPicker from "./pages/intro/colorPicker";
+import { StopWatch } from "./pages/intro/stopwatch";
+import { ToDoList } from "./pages/intro/todolist";
+import { SampleDesign } from "./pages/intro/sampleDesign";
 
 export function CustomRoutes() {
   return (
