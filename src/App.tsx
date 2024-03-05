@@ -1,5 +1,6 @@
 import "./App.css";
 import { DigitalClock } from "./Components/DigitalClock";
+import { StopWatch } from "./Components/stopwatch";
 import { TestUseEffect } from "./Components/testUseEffect";
 // import { Button } from "./Components/Buttons";
 // import { Student } from "./Components/students";
@@ -41,6 +42,7 @@ export function App() {
       <DigitalClock />
       <TestUseEffect />
       <ToDoList />
+      <StopWatch></StopWatch>
     </>
   );
 }
