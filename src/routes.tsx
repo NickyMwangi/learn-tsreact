@@ -5,13 +5,15 @@ import { Home } from "./pages/Home";
 import ColorPicker from "./pages/colorPicker";
 import { StopWatch } from "./pages/stopwatch";
 import { ToDoList } from "./pages/todolist";
+import { SampleDesign } from "./Components/sampleDesign";
 
 export function CustomRoutes() {
   return (
     <>
       <Routes>
         <Route element={<Baselayout />}>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<SampleDesign />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/color" element={<ColorPicker />} />
           <Route path="/to-do-list">
             <Route index element={<ToDoList />} />
