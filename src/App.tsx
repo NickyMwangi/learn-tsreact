@@ -1,10 +1,17 @@
+import { Button, Container, useColorMode } from "@chakra-ui/react";
 import "./App.css";
 import { CustomRoutes } from "./routes";
 
 export function App() {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <>
-      <CustomRoutes />
+      <Container maxW="container.xl" py={10}>
+        <CustomRoutes />
+        <Button onClick={toggleColorMode}>
+          Toggle theme {colorMode === "light" ? "Light" : "Dark"}
+        </Button>
+      </Container>
     </>
   );
 }
