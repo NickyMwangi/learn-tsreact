@@ -6,6 +6,8 @@ import ColorPicker from "./pages/intro/colorPicker";
 import { StopWatch } from "./pages/intro/stopwatch";
 import { ToDoList } from "./pages/intro/todolist";
 import { SampleDesign } from "./pages/intro/sampleDesign";
+import EmployeeListing from "./pages/employee";
+import { EmpCreate } from "./pages/employee/create";
 
 export function CustomRoutes() {
   return (
@@ -21,6 +23,11 @@ export function CustomRoutes() {
           </Route>
           <Route path="/stop-watch" element={<StopWatch />} />
           <Route path="/digital-clock" element={<DigitalClock />} />
+          <Route path="/Employee">
+            <Route index element={<EmployeeListing />} />
+            <Route path="create" element={<EmpCreate />} />
+            <Route path=":id" element={<EmployeeListing />} />
+          </Route>
         </Route>
         <Route
           path="*"
