@@ -7,12 +7,10 @@ export function App() {
   return (
     <>
       <div className="App">
-        <Container maxW="container.xl" py={10}>
-          <CustomRoutes />
-          <Button onClick={toggleColorMode}>
-            Toggle theme {colorMode === "light" ? "Dark" : "Light"}
-          </Button>
-        </Container>
+        <CustomRoutes />
+        <Button onClick={toggleColorMode}>
+          Toggle theme {colorMode === "light" ? "Dark" : "Light"}
+        </Button>
       </div>
     </>
   );

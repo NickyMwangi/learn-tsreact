@@ -4,13 +4,17 @@ import { useParams } from "react-router-dom";
 export function ToDoList() {
   const { id } = useParams();
 
-  const [tasks, setTasks] = useState(["Eat breakfast", "Take a shower", "start coding"]);
+  const [tasks, setTasks] = useState([
+    "Eat breakfast",
+    "Take a shower",
+    "start coding",
+  ]);
   const [newTask, setNewTask] = useState("");
 
   const InputChange = (e: any) => {
     setNewTask(e.target.value);
   };
-  
+
   const AddNewTask = (e: any) => {
     if (newTask.trim() !== "") {
       setTasks((t) => [...t, newTask]);
@@ -24,14 +28,20 @@ export function ToDoList() {
   const MoveTaskDown = (i: any) => {
     if (i < tasks.length - 1) {
       const updatedTasks = [...tasks];
-      [updatedTasks[i], updatedTasks[i + 1]] = [updatedTasks[i + 1], updatedTasks[i]];
+      [updatedTasks[i], updatedTasks[i + 1]] = [
+        updatedTasks[i + 1],
+        updatedTasks[i],
+      ];
       setTasks(updatedTasks);
     }
   };
   const MoveTaskUp = (i: any) => {
     if (i > 0) {
       const updatedTasks = [...tasks];
-      [updatedTasks[i], updatedTasks[i - 1]] = [updatedTasks[i - 1], updatedTasks[i]];
+      [updatedTasks[i], updatedTasks[i - 1]] = [
+        updatedTasks[i - 1],
+        updatedTasks[i],
+      ];
       setTasks(updatedTasks);
     }
   };
@@ -40,7 +50,13 @@ export function ToDoList() {
     <div className="to-do-list">
       <h1>To do list {id}</h1>
       <div>
-        <input type="text" placeholder="Enter a task" value={newTask} onChange={InputChange} />
+        <input
+          type="text"
+          placeholder="Enter a task"
+          value={newTask}
+          onChange={InputChange}
+        />
+
         <button className="add-button" onClick={AddNewTask}>
           Add
         </button>

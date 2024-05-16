@@ -8,6 +8,7 @@ import { ToDoList } from "./pages/intro/todolist";
 import { SampleDesign } from "./pages/intro/sampleDesign";
 import EmployeeListing from "./pages/employee";
 import { EmpCreate } from "./pages/employee/create";
+import { TaskDataTable } from "./pages/datatables/task-datatable";
 
 export function CustomRoutes() {
   return (
@@ -23,6 +24,7 @@ export function CustomRoutes() {
           </Route>
           <Route path="/stop-watch" element={<StopWatch />} />
           <Route path="/digital-clock" element={<DigitalClock />} />
+          <Route path="/data-table" element={<TaskDataTable />} />
           <Route path="/Employee">
             <Route index element={<EmployeeListing />} />
             <Route path="create" element={<EmpCreate />} />

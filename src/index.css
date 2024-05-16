@@ -49,6 +49,9 @@ button {
 }
 
 .add-button {
+  padding: 2px 8px;
+  border: 1px;
+  border-radius: 10px;
   background-color: hsl(125, 47%, 54%);
 }
 .add-button:hover {
@@ -56,18 +59,27 @@ button {
 }
 
 .delete-btn {
+  padding: 2px 8px;
+  border: 1px;
+  border-radius: 10px;
   background-color: hsl(10, 71%, 41%);
 }
 .delete-btn:hover {
   background-color: hsl(10, 90%, 40%);
 }
 .up-btn {
+  padding: 2px 8px;
+  border: 1px;
+  border-radius: 10px;
   background-color: hsl(64, 72%, 44%);
 }
 .up-btn:hover {
   background-color: hsl(64, 72%, 34%);
 }
 .down-btn {
+  padding: 2px 8px;
+  border: 1px;
+  border-radius: 10px;
   background-color: hsl(241, 70%, 49%);
 }
 .down-btn:hover {
