@@ -1,3 +1,17 @@
+# The application
+
+I used this application to remind myself web application development using React 18. Some of the features learnt are;
+
+- React state management using **useState, useMemo and useEffect**.
+- In built react hooks using **useMemo, useEffect, useState, useRef and useContext**
+- Creating custom Hooks
+- Using **Tanstack Table**.
+- Defining columns, pagination, editing cells and custom buttons in tanstack table.
+- Work on custom color picker and stopWatch.
+- Understanding react props
+- Communication between parent and child components and creating shared components.
+- using react packages such as **react-router-dom, react-hook-form,jest-dom test library, chakra-Ui, react-icons etc.**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
